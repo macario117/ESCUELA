@@ -2,9 +2,12 @@
 //************************************************************//
 //************************************************************//
 //************** Alumno (s): *********************************//
-//*************											******//
-//*************											******//
+//*************	Leonel Macario Falcon 			******//
+//*************	Visual Studio 2017			******//
 //************************************************************//
+
+                                     //YA ANIMACION YA ESTA GUARDADA, SE INICIA CON LA LETRA: L
+
 
 #include "texture.h"
 #include "figuras.h"
@@ -111,7 +114,7 @@ CFiguras fig7;	//Para crear Monito
 CModel kit;
 CModel llanta;
 
-//Animación del coche
+//AnimaciÃ³n del coche
 float angRot = 0.0;
 float movKitX = 0.0;
 float movKitZ = 0.0;
@@ -584,7 +587,7 @@ void display ( void )   // Creamos la funcion donde se dibuja
 				kit.GLrender(NULL,_SHADED,1.0); //Dibujamos la carroceria
 				//llanta.GLrender(NULL,_SHADED,1.0);
 
-				//Colocar aquí las llantas
+				//Colocar aquÃ­ las llantas
 				glPushMatrix(); //llanta frontal der
 					glTranslatef(-6,-1,7.5);
 					glRotatef(-rotTires,1,0,0);
@@ -831,13 +834,13 @@ void keyboard ( unsigned char key, int x, int y )  // Create Keyboard Function
 
 		case 'O':		//  
 		case 'o':
-				g_fanimacion^= true; //Activamos/desactivamos la animacíon
+				g_fanimacion^= true; //Activamos/desactivamos la animacÃ­on
 				circuito = false;
 			break;
 
 		case 'i':		//  
 		case 'I':
-				circuito^= true; //Activamos/desactivamos la animacíon
+				circuito^= true; //Activamos/desactivamos la animacÃ­on
 				g_fanimacion = false;
 			break;
 		
@@ -998,14 +1001,14 @@ int main ( int argc, char** argv )   // Main Function
 {
   glutInit            (&argc, argv); // Inicializamos OpenGL
   glutInitDisplayMode (GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-  glutInitWindowSize  (500, 500);	// Tamaño de la Ventana
+  glutInitWindowSize  (500, 500);	// TamaÃ±o de la Ventana
   glutInitWindowPosition (0, 0);	//Posicion de la Ventana
   glutCreateWindow    ("Practica 12"); // Nombre de la Ventana
   //glutFullScreen     ( );         // Full Screen
   InitGL ();						// Parametros iniciales de la aplicacion
-  glutDisplayFunc     ( display );  //Indicamos a Glut función de dibujo
-  glutReshapeFunc     ( reshape );	//Indicamos a Glut función en caso de cambio de tamano
-  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut función de manejo de teclado
+  glutDisplayFunc     ( display );  //Indicamos a Glut funciÃ³n de dibujo
+  glutReshapeFunc     ( reshape );	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+  glutKeyboardFunc    ( keyboard );	//Indicamos a Glut funciÃ³n de manejo de teclado
   glutSpecialFunc     ( arrow_keys );	//Otras
   glutIdleFunc		  ( animacion );
   glutMainLoop        ( );          // 
