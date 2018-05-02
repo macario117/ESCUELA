@@ -6,7 +6,8 @@
 //*************	Visual Studio 2017			******//
 //************************************************************//
 
-                                     //YA ANIMACION YA ESTA GUARDADA, SE INICIA CON LA LETRA: L
+                                     //LA ANIMACION YA ESTA GUARDADA, SE INICIA CON LA LETRA: L
+                                          //LA ANIMACION ES UN BAILE
 
 
 #include "texture.h"
